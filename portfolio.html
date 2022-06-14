@@ -6,29 +6,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфоліо</title>
+    <!-- Шрифти -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:ital,wght@0,400;0,500;0,700;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./CSS/styles.css">
 </head>
 
-<body>
+<body class="page">
 
     <!-- Секція хедер -->
     <header class="header">
-        <nav class="header-nav">
-            <a class="header-logo" href="">Web<span>Studio</span></a>
+        <nav>
+            <a lang="en" class="logo" href="./index.html" aria-label="Посилання на студію">Web<span class="studio">Studio</span></a>
             <!-- Навігація сайту -->
-            <ul class="header-list">
-                <li><a class="header-link" href="./index.html">Студія</a></li>
-                <li><a class="header-link" href="">Портфоліо</a></li>
-                <li><a class="header-link" href="">Контакти</a></li>
+            <ul class="site-nav list" >
+                <li><a class="link" href="./index.html">Студія</a></li>
+                <li><a class="link-current" href="">Портфоліо</a></li>
+                <li><a class="link" href="">Контакти</a></li>
             </ul>
         </nav>
         <!-- Навігація контактів -->
-        <ul>
+        <ul class="site-nav list">
             <li>
-                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <a class="mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
             <li>
-                <a href="tel:+380961111111">+380961111111</a>
+                <a class="tel" href="tel:+380961111111">+380961111111</a>
             </li>
         </ul>
     </header>
@@ -38,58 +44,78 @@
             <h1>Приклади робіт</h1>
 
             <!-- Секція Радіокнопки -->
-            <button title="button">Все</button>
-            <button title="button">Веб-сайти</button>
-            <button title="button">Додатки</button>
-            <button title="button">Дизайн</button>
-            <button title="button">Маркетинг</button>
-
+            <ui class="list">
+                <li><button type="button" class="list-btn">Усі роботи</button></li>
+                <li><button type="button" class="list-btn">Веб-сайти</button></li>
+                <li><button type="button" class="list-btn">Додатки</button></li>
+                <li><button type="button" class="list-btn">Дизайн</button></li>
+                <li><button type="button" class="list-btn">Маркетинг</button></li>
+            </ui>      
+            
             <!-- Секція Карток -->
-            <ul>
-                <li>
-                    <img src="./images/Технокряк.jpg" alt="Фото роботи Технокряк" width="370" height="294">
-                    <h2>Технокряк</h2>
-                    <p>Веб-сайт</p>
+            <ul class="list">
+                <li class="card-portfolio">
+                    <a href="">
+                        <img src="./images/Технокряк.jpg" alt="Фото роботи Технокряк" width="370" height="294">
+                        <h2 class="topic">Технокряк</h2>
+                        <p class="category">Веб-сайт</p>
+                    </a>
                 </li>
-                <li>
-                    <img src="./images/New_Orlean.jpg" alt="Фото роботи Постер New Orlean vs Golden Star" width="370" height="294">
-                    <h2>Постер New Orlean vs Golden Star</h2>
-                    <p>Дизайн</p>                    
+                <li class="card-portfolio">
+                    <a href="">
+                        <img src="./images/New_Orlean.jpg" alt="Фото роботи Постер New Orlean vs Golden Star" width="370" height="294">
+                        <h2 class="apply-robot">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
+                        <p class="category">Дизайн</p>
+                    </a>                                      
                 </li>
-                <li>
-                    <img src="./images/Seafood.jpg" alt="Фото роботи Ресторан Seafood" width="370" height="294">
-                    <h2>Ресторан Seafood</h2>
-                    <p>Додаток</p>                    
+                <li class="card-portfolio">
+                    <a href="">
+                        <img src="./images/Seafood.jpg" alt="Фото роботи Ресторан Seafood" width="370" height="294">
+                        <h2 class="apply-robot">Ресторан <span lang="en">Seafood</span></h2>
+                        <p class="category">Додаток</p>
+                    </a>                                   
                 </li>
-                <li>
-                    <img src="./images/Prime.jpg" alt="Фото роботи роект Prime" width="370" height="294">
-                    <h2>Проект Prime</h2>
-                    <p>Маркетинг</p>                    
+                <li class="card-portfolio">
+                    <a href="">
+                        <img src="./images/Prime.jpg" alt="Фото роботи роект Prime" width="370" height="294">
+                        <h2 class="apply-robot">Проект <span lang="en">Prime</span></h2>
+                        <p class="category">Маркетинг</p>
+                    </a>                                    
                 </li>
-                <li>
-                    <img src="./images/Boxes.jpg" alt="Фото роботи Проект Boxes" width="370" height="294">
-                    <h2>Проект Boxes</h2>
-                    <p>Додаток</p>
+                <li class="card-portfolio">
+                    <a href="">
+                        <img src="./images/Boxes.jpg" alt="Фото роботи Проект Boxes" width="370" height="294">
+                        <h2 class="apply-robot">Проект <span lang="en">Boxes</span></h2>
+                        <p class="category">Додаток</p>
+                    </a>                    
                 </li>
-                <li>
-                    <img src="./images/Inspiration.jpg" alt="Фото роботи Inspiration has no Borders" width="370" height="294">
-                    <h2>Inspiration has no Borders</h2>
-                    <p>Веб-сайт</p>
+                <li class="card-portfolio">
+                    <a href="">
+                        <img src="./images/Inspiration.jpg" alt="Фото роботи Inspiration has no Borders" width="370" height="294">
+                        <h2 class="apply-robot"><span lang="en">Inspiration has no Borders</span></h2>
+                        <p class="category">Веб-сайт</p>
+                    </a>
                 </li>                
-                <li>
-                    <img src="./images/Limited_Edition.jpg" alt="Фото роботи Видавництво Limited Edition" width="370" height="294">
-                    <h2>Видавництво Limited Edition</h2>
-                    <p>Дизайн</p>
+                <li class="card-portfolio">
+                    <a href="">
+                        <img src="./images/Limited_Edition.jpg" alt="Фото роботи Видавництво Limited Edition" width="370" height="294">
+                        <h2 class="apply-robot">Видавництво <span lang="en">Limited Edition</span></h2>
+                        <p class="category">Дизайн</p>
+                    </a>                    
                 </li>
-                <li>
-                    <img src="./images/LAB.jpg" alt="Фото роботи Проект LAB" width="370" height="294">
-                    <h2>Проект LAB</h2>
-                    <p>Маркетинг</p>
+                <li class="card-portfolio">
+                    <a href="">
+                        <img src="./images/LAB.jpg" alt="Фото роботи Проект LAB" width="370" height="294">
+                        <h2 class="apply-robot">Проект <span lang="en">LAB</span></h2>
+                        <p class="category">Маркетинг</p>
+                    </a>                   
                 </li>
-                <li>
-                    <img src="./images/Growing-Business.jpg" alt="Фото роботи Growing Business" width="370" height="294">
-                    <h2>Growing Business</h2>
-                    <p>Додаток</p>
+                <li class="card-portfolio">
+                    <a href="">
+                        <img src="./images/Growing-Business.jpg" alt="Фото роботи Growing Business" width="370" height="294">
+                        <h2 class="apply-robot"><span lang="en">Growing Business</span></h2>
+                        <p class="category">Додаток</p>
+                    </a>                   
                 </li>
             </ul>
 
@@ -98,18 +124,17 @@
     </main>
     <!-- Секція Футер -->
     <footer class="footer">
-        <a href="">Web<span>Studio</span></a>
+        <a lang="en" class="logo2" href="./index.html" aria-label="Посилання на студію">Web<span class="element">Studio</span></a>
         <address>
-            <ul>
+            <ul class="list">
                 <li>
-                    <a href="https://goo.gl/maps/7YwU6FTkQ5FnYXwe8" target="_blank" rel="noopener noreferrer">м. Київ,
-                        пр-т Лесі Українки, 26</a>
+                    <a class="adds" href="https://goo.gl/maps/7YwU6FTkQ5FnYXwe8" target="_blank" rel="noopener noreferrer">м. Київ, пр-т Лесі Українки, 26</a>
                 </li>
                 <li>
-                    <a href="mailto:info@example.com">info@example.com</a>
+                    <a  lang="en" class="mail2" href="mailto:info@example.com">info@example.com</a>
                 </li>
                 <li>
-                    <a href="tel:+380991111111">+380991111111</a>
+                    <a class="phone" href="tel:+380991111111">+380991111111</a>
                 </li>
             </ul>
         </address>
