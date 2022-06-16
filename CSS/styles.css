@@ -47,7 +47,7 @@ color: var(--accent-color);}
 .tel{
     font-weight: 500;
     font-size: 14px;
-    line-height: 1, 14;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--title-text-color)
 }
@@ -85,26 +85,33 @@ color: var(--accent-color);}
 }
 
 /* Герой */
-.hero{
-    color: var(--main-page-color);
+.hero{    
     background-color: var(--section-background-colour);
+    
+}
+.hero-title{
     font-weight: 900;
     font-size: 44px;
-    line-height: 1.36;    
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
+    line-height: 1.36;
+    color: var(--main-page-color);
+
 }
+
 .order {
-    font-family:inherit;
+    font-family: 'Roboto';
+    font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
     color: var(--main-page-color);
     background: var(--accent-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
+    
+}
+.order:hover,
+.order:focus {
+    color: var(--main-page-color);
+    background: #188CE8;
 }
 /* Секції */
 .feature{
@@ -179,7 +186,9 @@ background: var(--section-background-colour);
 color: var(--main-page-color);
 }
 
-.logo2{
+.logo2 {
+    font-family: Releway, sans-serif;
+    font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
@@ -252,6 +261,7 @@ a{
 }
 /* Радіокнопки портфоліо */
 .list-btn {
+    font-family: inherit;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
